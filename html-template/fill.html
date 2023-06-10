@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Survey Test Results</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Satisfy" rel="stylesheet">
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row ">
+        
+    
+     <div class="col-lg-2 col-md-12"></div>
+     <div class="col-lg-6 col-md-12 p-2 ">
+        <form action="fill.php" class=" card   shadow-lg border rounded p-2 mx-1 mt-3" method="post">
+          <div class="fs-2 text-center mt-5 fw-bold">Take our Survey</div>
+            <p class="fw-bold  fs-6 mt-3">Personal Details:</p>
+            <div class="row">
+            <div class="col-lg-6 col-md-12 fw-light">
+                Surname
+                <input type="text" class="form-control" name="surname" pattern="[A-Za-z\s]+" title="Only letters and spaces are allowed" required>
+            </div>
+            <div class="col-lg-6 col-md-12 fw-light">
+                 First Names
+                    <input type="text" class="form-control" name="fname" pattern="[A-Za-z\s]+" title="Only letters and spaces are allowed" required>
+                </div>
+                <div class="col-lg-6 col-md-12 fw-light">
+                Contact Number
+                <input type="tel" class="form-control" name="contact" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="Please enter a valid telephone number in the format XXX-XXX-XXXX" required>
+            </div>
+                    <div class="col-lg-6 col-md-12 fw-light">
+                        Date
+                        <input type="date" class="form-control" name="date" pattern="\d{4}-\d{2}-\d{2}" title="Please enter a valid date in the format YYYY-MM-DD" required>
+                    </div>
+                        <div class="col-lg-6 col-md-12 fw-light">
+                            Age
+                            <input type="number" class="form-control" name="age" pattern="[1-9][0-9]*" title="Please enter a valid age as a positive integer" required>
+                        </div>
+                    
+                    
+        </div>
+
+        <p class="fw-bold fs-6 mt-3">What is your favourite food? (You can choose more than 1 answer)</p>
+            <div class="row">
+            <div class="col-1">
+            
+                <input type="checkbox" class="form-check" name="food" value="Pizza" >
+            </div>
+            <div class="col-9 fw-light">
+                 Pizza
+                    
+                </div>
+                <div class="col-lg-2 col-md-12"></div>
+                <div class="col-1">
+            
+                    <input type="checkbox" class="form-check"  name="food" value="Pasta" >
+                </div>
+
+                <div class="col-9 fw-light">
+                     Pasta
+                        
+                    </div>
+                    <div class="col-lg-2 col-md-12"></div>
+                    <div class="col-1">
+            
+                        <input type="checkbox" class="form-check"  name="food" value="Pap and Wors" >
+                    </div>
+                    <div class="col-9 fw-light">
+                        Pap and Wors
+                            
+                        </div>
+                        <div class="col-lg-2 col-md-12"></div>
+                        <div class="col-1">
+                    
+                            <input type="checkbox" class="form-check"  name="food" value="Chicken stir fry">
+                        </div>
+        
+                        <div class="col-9 fw-light">
+                            Chicken stir fry
+                                
+                            </div>
+                            <div class="col-lg-2 col-md-12"></div>
+                            
+                    <div class="col-1">
+            
+                        <input type="checkbox" class="form-check"  name="food" value=" Beef stir fry" >
+                    </div>
+                    <div class="col-9 fw-light">
+                        Beef stir fry
+
+                            
+                        </div>
+                        <div class="col-lg-2 col-md-12"></div>
+                        <div class="col-1">
+                    
+                            <input type="checkbox" class="form-check" name="food" value=" Other"  >
+                        </div>
+        
+                        <div class="col-4 fw-light">
+                            Other
+                                
+                            </div>
+                            <div class="col-lg-2 col-md-12"></div>
+                    
+                    
+                    
+                    
+        </div>
+                
+
+        <p class="fw-bold fs-6 mt-3">On a scale of 1 to 5 indicate whether you strongly agree to strongly disagree</p>
+        <div class="row">
+            <div class="table-bordered table-responsive ">
+        <table  >
+            <tr class="bg-dark text-white ">
+              <th></th>
+              <th class="fw-light p-1">Strongly agree(1)</th>
+              <th class="fw-light p-1">Agree(2)</th>
+              <th class="fw-light p-1">Neutral(3)</th>
+              <th class="fw-light p-1">Disagree(4)</th>
+              <th class="fw-light p-1">Strongly disagree(5)</th>
+            </tr>
+            <tr class="p-2">
+              <td class="p-1 fw-light"> I like to eat out</td>
+              <td class="p-2"><input type="radio" name="eat" value="Strongly agree(1)"></td>
+                <td class="p-2"><input type="radio" name="eat" value="Agree(2)"></td>
+              <td class="p-2"><input type="radio" name="eat" value="Neutral(3)"></td>
+            <td class="p-2"><input type="radio" name="eat" value="Disagree(4)"></td>
+              <td class="p-2"><input type="radio" name="eat" value="Strongly disagree(5)"></td>
+            </tr>
+            <tr class="p-2">
+              <td class="p-1 fw-light"> I like watching movies</td>
+              <td class="p-2"><input type="radio" name="movie" value="Strongly agree(1)"></td>
+                <td class="p-2"><input type="radio" name="movie" value="Agree(2)"></td>
+              <td class="p-2"><input type="radio" name="movie" value="Neutral(3)"></td>
+            <td class="p-2"><input type="radio" name="movie" value="Disagree(4)"></td>
+              <td class="p-2"><input type="radio" name="movie" value="Strongly disagree(5)"></td>
+            </tr>
+            <tr class="p-2">
+              <td class="p-1 fw-light">I like to watch TV</td>
+              <td class="p-2 fw-bold"><input type="radio" name="tv" value="Strongly agree(1)"></td>
+              <!-- <td class="p-2 fw-light"><input type="radio" name="tv" value="Neutral(3)"></td> -->
+              <td class="p-2 fw-light "><input type="radio" name="tv" value="Agree(2)"></td>
+              <td class="p-2 fw-light"><input type="radio" name="tv" value="Neutral(3)"></td>
+            <td class="p-2 fw-light"><input type="radio" name="tv" value="Disagree(4)"></td>
+              <td class="p-2 fw-light"><input type="radio" name="tv" value="Strongly disagree(5)"></td>
+            </tr>
+            <tr class="p-2">
+              <td class="p-1 fw-light">I like to listen to the radio</td>
+              <td class="p-2"><input type="radio" name="radio" value="Strongly agree(1)"></td>
+                <td class="p-2"><input type="radio" name="radio" value="Agree(2)"></td>
+              <td class="p-2"><input type="radio" name="radio" value="Neutral(3)"></td>
+            <td class="p-2"><input type="radio" name="radio" value="Disagree(4)"></td>
+              <td class="p-2"><input type="radio" name="radio" value="Strongly disagree(5)"></td>
+            </tr>
+          </table>
+        </div>
+        </div>
+        <p class="text-center mt-3">
+         <input type="submit" name="submit" id="" class="btn  btn-dark" value="Submit">
+         
+        </p>
+        </form>
+    </div>
+    </div>
+  </div>
+
+  <!-- ======= Header ======= -->
+ 
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
